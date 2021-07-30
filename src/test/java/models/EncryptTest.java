@@ -18,8 +18,10 @@ public class EncryptTest {
     }
 
     @Test
-    public  void  encrypt_notNull_Exception(){
+    public  void  encrypt_notNull_Exception() throws Exception {
+        Encrypt encrypt = new Encrypt();
 
+        String  actual = encrypt.encoding("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",1);
     }
 
     @Test
