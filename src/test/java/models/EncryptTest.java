@@ -2,20 +2,22 @@ package models;
 
 import org.junit.Test;
 
+import static junit.framework.Assert.assertNotNull;
 import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class EncryptTest {
 
     @Test
-    public  void encrypt_onlyString_exception(){
+    public  void encrypt_onlyString_exception() throws Exception {
         //arrange
         Encrypt encrypt = new Encrypt();
 
         //act
-        // var input = encrypt.imput;
+        String actual = encrypt.encoding("1",1);
 
         //assert
-//            assertEquals(input instanceof String);
+        assertTrue(actual instanceof String);
 
     }
 
@@ -23,7 +25,9 @@ public class EncryptTest {
     public  void  encrypt_notNull_Exception() throws Exception {
         Encrypt encrypt = new Encrypt();
 
-        String  actual = encrypt.encoding("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",1);
+        String  actual = encrypt.encoding("AB",1);
+
+        assertNotNull(actual);
     }
 
     @Test
