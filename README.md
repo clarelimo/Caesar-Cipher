@@ -3,7 +3,7 @@ A Caesar cipher is a type of substitution in which each letter is shifted a cert
 #### By  Clare Limo
 
 ## Setup/Installation Requirements
-* You need to have IntelliJ installed.
+* You need to have IntelliJ, Junit, Jdk and sdk installed.
 * Clone the repository
 * Run the App
 ## Known Bugs
