@@ -8,7 +8,7 @@ public class Encrypt {
     public String encoding(String plainText, int key) throws Exception {
         int n = plainText.length();
 
-        if(n <=0 || n > 25) throw new Exception("The characters must be between 0 and 25");
+        if(key < 1 || key > 25) throw new Exception("The key must be between 1 and 25");
 
         for(int i=0;i<n;i++){
             char letter = plainText.charAt(i);
