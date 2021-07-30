@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class EncryptTest {
@@ -25,18 +24,14 @@ public class EncryptTest {
     @Test
     public  void  encrypt_notNull_Exception() throws Exception {
         Encrypt encrypt = new Encrypt();
-
         String  actual = encrypt.encoding("AB",1);
-
         assertNotNull(actual);
     }
 
     @Test
     public void  encrypt_encryptText_string() throws Exception {
         Encrypt encrypt = new Encrypt();
-
         String  actual = encrypt.encoding("AB",1);
-
         assertEquals("BC",actual);
     }
 

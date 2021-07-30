@@ -1,3 +1,4 @@
+import models.Decrypt;
 import models.Encrypt;
 
 import java.io.BufferedReader;
@@ -23,7 +24,26 @@ public class App {
                 String encrypted = encrypt.encoding(inputText,key);
                 System.out.println("Your encrypted text is: ");
                 System.out.println(encrypted);
-                System.out.println("Thank you for using our service!");
+
+                System.out.println("Would you like to decrypt the text above? , [Y/N]");
+                String choice = bufferedReader.readLine();
+
+                if(choice.toLowerCase().equals("y")){
+                    Decrypt decrypt = new Decrypt(encrypted,key);
+                    decrypt.Decode();
+                    String decrypted = decrypt.getDecrypted();
+
+                    System.out.println("Your decrypted text is: ");
+                    System.out.println(decrypted);
+
+                    System.out.println("Thank you for using our service!");
+                }else if(choice.toLowerCase().equals("n")){
+                    System.out.println("Thank you for using our service!");
+                }else {
+                    System.out.println("Please enter Y/N");
+                }
+
+
             }
 
 
