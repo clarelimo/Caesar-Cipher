@@ -1,7 +1,7 @@
 package models;
 
 public class Decrypt {
-    private String decrypted;
+    private String decrypted="";
     private String encrypted;
     private int key;
 
@@ -32,6 +32,8 @@ public class Decrypt {
                         decrypted+=r;
                     }
                 }
+            }else {
+                decrypted+=letter;
             }
 
         }
