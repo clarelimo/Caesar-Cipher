@@ -44,10 +44,10 @@ public class EncryptTest {
     public void  encrypt_boundaryLength_exception(){
         try {
             Encrypt encrypt = new Encrypt();
-            String actual = encrypt.encoding("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",3);
+            String actual = encrypt.encoding("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",27);
 
         }catch (Exception ex){
-            assertEquals("The characters must be between 0 and 25",ex.getMessage());
+            assertEquals("The key must be between 1 and 25",ex.getMessage());
         }
 
     }

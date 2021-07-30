@@ -4,7 +4,6 @@ public class Encrypt {
 
     private String encrypted = "";
 
-
     public String encoding(String plainText, int key) throws Exception {
         int n = plainText.length();
 
@@ -38,4 +37,7 @@ public class Encrypt {
 
     }
 
+    public String getEncrypted() {
+        return encrypted;
+    }
 }
