@@ -24,14 +24,14 @@ hs_err_pid*
 # Java and Gradle #
 ############
 build/
-.gradle/
+*.gradle/
 out/
 out
 .gradle
 gradle
 gradlew.bat
 gradlew
-settings.gradle
+* settings.gradle
 
 # IntelliJ #
 ############
