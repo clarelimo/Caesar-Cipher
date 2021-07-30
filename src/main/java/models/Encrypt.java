@@ -29,11 +29,9 @@ public class Encrypt {
                     }
                 }
 
-            }else{
-                encrypted+=letter;
-//                throw new Exception("Please enter letters only");
+            }else {
+                encrypted += letter;
             }
-
         }
 
         return  encrypted;
