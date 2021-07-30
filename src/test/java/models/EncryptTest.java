@@ -24,7 +24,7 @@ public class EncryptTest {
 
     @Test
     public void  encrypt_encryptText_string(){
-        
+
     }
 
 }
