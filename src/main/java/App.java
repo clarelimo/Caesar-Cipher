@@ -42,15 +42,11 @@ public class App {
                 }else {
                     System.out.println("Please enter Y/N");
                 }
-
-
             }
-
 
         }catch (Exception ex){
             ex.printStackTrace();
         }
-
     }
 
 }
