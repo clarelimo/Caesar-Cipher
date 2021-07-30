@@ -12,25 +12,26 @@ public class Encrypt {
 
         for(int i=0;i<n;i++){
             char letter = plainText.charAt(i);
-            if(Character.isLetter(letter)){
-                if(Character.isUpperCase(letter)){
-                    char r = (char)(letter+key);
+            if(Character.isLetter(letter)) {
+                if (Character.isUpperCase(letter)) {
+                    char r = (char) (letter + key);
                     if (r > 'Z') {
-                        encrypted += (char)(letter-(26-key));
-                    }else {
+                        encrypted += (char) (letter - (26 - key));
+                    } else {
                         encrypted += r;
                     }
-                }else  if(Character.isLowerCase(letter)){
-                    char r = (char)(letter+key);
-                    if(r > 'z'){
-                        encrypted += (char)(letter - (26-key));
-                    }else{
+                } else if (Character.isLowerCase(letter)) {
+                    char r = (char) (letter + key);
+                    if (r > 'z') {
+                        encrypted += (char) (letter - (26 - key));
+                    } else {
                         encrypted += r;
                     }
                 }
 
             }else{
-                throw new Exception("Please enter letters only");
+                encrypted+=letter;
+//                throw new Exception("Please enter letters only");
             }
 
         }

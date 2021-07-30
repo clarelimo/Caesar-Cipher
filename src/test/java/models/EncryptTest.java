@@ -2,6 +2,8 @@ package models;
 
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertEquals;
+
 public class EncryptTest {
 
     @Test
@@ -25,8 +27,12 @@ public class EncryptTest {
     }
 
     @Test
-    public void  encrypt_encryptText_string(){
+    public void  encrypt_encryptText_string() throws Exception {
+        Encrypt encrypt = new Encrypt();
 
+        String  actual = encrypt.encoding("AB",1);
+
+        assertEquals("BC",actual);
     }
 
 }
